@@ -55,8 +55,6 @@
 --
 --   * "Diagrams.TwoD.Text" defines primitive text diagrams.
 --
---   * "Diagrams.TwoD.Image" allows importing external images into diagrams.
---
 --   * "Diagrams.TwoD.Vector" defines some special 2D vectors and
 --     functions for converting between vectors and angles.
 --
@@ -185,16 +183,6 @@ module Diagrams.TwoD
        , _font, _fontSizeR, _fontSize
        , fontSizeO, fontSizeL, fontSizeN, fontSizeG
 
-         -- * Images
-       , DImage(..), ImageData(..)
-       , Embedded, External, Native
-       , image
-       , loadImageEmb
-       , loadImageExt
-       , uncheckedImageRef
-       , raster
-       , rasterDia
-
          -- * Transformations
          -- ** Rotation
        , rotation, rotate, rotateBy, rotated
@@ -302,7 +290,6 @@ import           Diagrams.TwoD.Attributes
 import           Diagrams.TwoD.Combinators
 import           Diagrams.TwoD.Deform
 import           Diagrams.TwoD.Ellipse
-import           Diagrams.TwoD.Image
 import           Diagrams.TwoD.Model
 import           Diagrams.TwoD.Path
 import           Diagrams.TwoD.Polygons
